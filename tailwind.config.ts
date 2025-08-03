@@ -88,6 +88,20 @@ const config = {
             animationTimingFunction: "cubic-bezier(0, 0, 0.2, 1)",
           },
         },
+        "pulse-glow": {
+          "0%": {
+            transform: "scale(0.95)",
+            boxShadow: "0 0 0 0 rgba(224, 12, 51, 0.7)",
+          },
+          "70%": {
+            transform: "scale(1)",
+            boxShadow: "0 0 0 10px rgba(224, 12, 51, 0)",
+          },
+          "100%": {
+            transform: "scale(0.95)",
+            boxShadow: "0 0 0 0 rgba(224, 12, 51, 0)",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -95,6 +109,7 @@ const config = {
         pan: "pan 120s linear infinite",
         "fade-down": "fade-down 0.9s ease-out both",
         "bounce-slow": "bounce 2.5s infinite",
+        "pulse-glow": "pulse-glow 2s infinite",
       },
     },
   },
